@@ -1,0 +1,13 @@
+{
+    "name": "froi/vehicle-rental-tracker",
+    "description": "Assessment - OOP Mini-Program: Vehicle Rental Tracker",
+    "type": "project",
+    "require": {
+        "php": ">=8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}
