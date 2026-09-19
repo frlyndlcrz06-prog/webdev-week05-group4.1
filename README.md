@@ -35,17 +35,3 @@ vehicle-rental-tracker/
 composer dump-autoload   # regenerate vendor/ if needed
 php index.php
 ```
-
-## What I Learned
-
-Working through this exercise helped me understand how namespaces keep class
-names organized and collision-free, especially once a project has more than a
-few files. Implementing the `Rentable` interface made it clearer why Laravel
-leans so heavily on interfaces — it lets different classes guarantee they
-support the same method without needing the exact same internal logic.
-Composer's PSR-4 autoloading was the part that clicked the most once I saw
-`vendor/autoload.php` map my `App\` namespace straight to the `src/` folder,
-so I never had to write manual `require` statements for each class. What I
-still want to explore more is how autoloading behaves in bigger projects with
-multiple namespaces and subfolders, since this example only has one root
-namespace.
